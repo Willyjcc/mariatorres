@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div *ngIf="urlImage | async; else btnDisabled"> Imagen Actualizada </div>
+        <ng-template #btnDisabled>
+          Imagen Actual 452 x 444 
+        </ng-template>
+        <br>
+        <img *ngIf="todo.img" src="{{todo.img}}" width="100%" style="max-width:200px;">
+        <ion-card *ngIf="todo.img == '' " class="azul" style="max-width:200px;">
+          <ion-card-content>
+            <img src="/assets/img/preview.png" width="100%">
+          </ion-card-content>  
+        </ion-card>
+        <h5>Seleccionar image:</h5>
+        <input type="file" accept=".png, .jpg" (change)="onUpload($event)">
+        <input id="imagen" type="hidden" [(ngModel)]="todo.img" [value]="urlImage | async">
+      </ion-col>
+      <ion-col>
+        <div *ngIf="urlImage2 | async; else btnDisabled2"> Imagen Original Actualizada </div>
+        <ng-template #btnDisabled2>
+          Imagen Actual
+        </ng-template>
+        <br>
+        <img *ngIf="todo.img2" src="{{todo.img2}}" width="100%" style="max-width:200px;">
+        <ion-card *ngIf="todo.img2 == '' " class="azul" style="max-width:200px;">
+          <ion-card-content>
+            <img src="/assets/img/preview.png" width="100%">
+          </ion-card-content>  
+        </ion-card>
+        <h5>Seleccionar image:</h5>
+        <input type="file" accept=".png, .jpg" (change)="onUpload2($event)">
+        <input id="imagen2" type="hidden" [(ngModel)]="todo.img2" [value]="urlImage2 | async">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item *ngIf="todo">
+          <ion-input required type="text" placeholder="TITULO" [(ngModel)]="todo.task"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item *ngIf="todo">
+          <ion-select required placeholder="CATEGORIA" [(ngModel)]="todo.category">
+            <ion-select-option value="branding">Branding</ion-select-option>
+            <ion-select-option value="web">Web</ion-select-option>
+            <ion-select-option value="app">App</ion-select-option>
+            <ion-select-option value="redes">Redes</ion-select-option>
+            <ion-select-option value="otros">Otros</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list lines="full">
+    <!-- <ion-item *ngIf="todo">
+      <ion-input required type="number" placeholder="Priority" [(ngModel)]="todo.priority"></ion-input>
+    </ion-item> -->
+  </ion-list>
+
+  <ion-button expand="full" class="boton-menu" color="primary" shape="round" (click)="saveTodo()">Save</ion-button>
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" color="danger">
+      <ion-fab-button color="danger" (click)="onRemoveTodo(todoId)" routerLink="/dashboard" routerDirection="forward">
+          <ion-icon name="trash"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+</ion-content>

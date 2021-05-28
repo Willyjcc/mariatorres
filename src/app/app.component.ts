@@ -16,11 +16,6 @@ export class AppComponent {
       url: '/home',
       icon: 'home'
     },
-    {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    }
   ];
 
   constructor(
@@ -30,7 +25,10 @@ export class AppComponent {
   ) {
     this.initializeApp();
   }
-
+  scrollTo(section) {
+    document.querySelector('#' + section)
+    .scrollIntoView({behavior:"smooth"});
+  }
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();

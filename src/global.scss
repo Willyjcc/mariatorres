@@ -1,14 +1,3 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
-
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
 
@@ -24,3 +13,198 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+//Willyjcc
+.container-general{
+	margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.ocultar-pc{
+    display: none;
+}
+.icon-menu-movil{
+    display: none;
+}
+.menus{
+    min-width: 0px !important;
+    max-width: 0% !important;
+}
+.menu-pc{
+    height: 150px;
+}
+.logo{
+    position: absolute;
+    top: 8px;
+	width: 120px;
+}
+.logo-movil{
+    display: none;
+    width: 100px;
+    margin-left: 60px;
+}
+.icon-social{
+    width: 35px;
+}
+.fondo{
+    --background: url('/assets/img/fondo.png');
+    background-size: cover;
+    // min-height: 110vh;
+}
+.fondo-amanecer{
+    min-height: 110vh;
+    background: url('/assets/img/fondo-amanecer.png');
+    background-attachment: fixed;
+    background-size: cover;
+    .bienvenidos{
+        margin-top: 18vh;
+        h1 {
+            font-size: 3rem;
+        }
+    }
+    .boton-menu{
+        --background: transparent;   
+        border-radius: 20px;
+        border: solid 1.5px;
+        height: 40px;
+        width: 300px;
+    }
+}
+.reflejos{
+    position: relative;
+    top: -19vw;
+    .sol{
+        position: absolute;
+        width: 35%;
+        right: 33%;
+        z-index: 0;
+    }
+    .tree-big{
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+    .tree-small{
+        position: relative;
+        top: -7.7vw;
+        width: 100%;
+        z-index: 4;
+    }
+    .fondo-reflejo-sol{
+        position: relative;
+        top: -8vw;
+        width: 100%;
+        z-index: 2;
+        background: #3c697c38;
+        height: 17vw;
+    }
+    .fondo-reflejo2{
+        position: relative;
+        top: -22vw;
+        width: 100%;
+    }
+}
+.text-sobremi{
+    margin-top: -22vw;
+}
+#icons-yo{
+    h5{
+        max-width: 320px;
+        margin: 0 auto;  
+    }
+}
+.botones-portfolio{
+    position: relative;
+    z-index: 999;
+}
+.web, .app, .redes, .otros{
+    display: none;
+}
+.boton-menu{
+    --background: transparent;   
+    border-radius: 20px;
+    border: solid 1.5px;
+    height: 40px;
+    width: 120px;
+}
+.footer{
+    position:relative;
+    top:11vw;
+}
+.boton-menu2{
+    --background: #fff;
+    background: #fff;   
+    border-radius: 20px;
+    height: 46px;
+    width: 250px;
+    color: #008e86;
+    cursor: pointer;
+    margin-left: 200px;
+    font-family: "Raleway-ExtraLight";
+    font-weight: bold;
+}
+.fondo-footer{
+    width: 100%;
+    margin-top: -20vw;
+}
+@media only screen and (max-width : 992px){
+    .footer{
+        top:12vw;
+        h5{
+            font-size: 14px;
+        }
+    }
+    .boton-menu2 {
+        margin-left: 20vw;
+    }
+}
+@media only screen and (max-width : 767px){
+    .ocultar-movil{
+        display: none;
+    }
+    .ocultar-pc{
+        display: initial;
+    }  
+    .icon-menu-movil{
+        display: initial;
+    }
+    .menus{
+        max-width: 100% !important;
+    }   
+    .menu-pc{
+        display: none;
+    }
+    .logo-movil{
+        display: initial;
+    }
+    .banner h2 {
+        margin: -45px auto;
+    }
+    ion-toolbar.in-toolbar .sc-ion-buttons-ios-h, ion-toolbar.in-toolbar .ion-title-ios {
+        margin-top: 32px;
+    }
+    .footer{
+        top:13vw;
+        h5{
+            font-size: 12px;
+        }
+    }
+}
+@media only screen and (max-width : 600px){
+    .title-ios{
+        height: 125px;
+        .logo-movil{
+            margin-left: 0 !important;    
+        }
+    }
+    .fondo-amanecer .bienvenidos h1 {
+        font-size: 26px;
+    }
+    .footer {
+        top: -2vw;
+        img{
+            position: relative;
+            top: 15px;
+            width: 35px;
+        }
+    }
+}

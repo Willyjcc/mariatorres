@@ -75,3 +75,123 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
+// Willy
+$colors: (
+  blanco:#fff,
+  azul:#004a6e,
+  azul-claro:#005577,
+  mostaza: #cca269,
+  mostaza-claro: #ffbc67,
+  verde: #008e86,
+);
+.white{
+  background-color: map-get($colors, blanco);
+}
+.azul{
+  background-color: map-get($colors, azul);
+}
+.azul-claro{
+  background-color: map-get($colors, azul-claro);
+}
+.white-text{
+  color: map-get($colors, blanco);
+}
+.azul-text{
+  color: map-get($colors, azul);
+}
+.azul-claro-text{
+  color: map-get($colors, azul-claro);
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-justify{
+	text-align: justify;
+}
+@font-face {
+  font-family: 'Raleway-Black';
+  src: url('../assets/fonts/Raleway-Black.ttf');
+}
+@font-face {
+  font-family: 'Raleway-BlackItalic';
+  src: url('../assets/fonts/Raleway-BlackItalic.ttf');
+}
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../assets/fonts/Raleway-Bold.ttf');
+}
+@font-face {
+  font-family: 'Raleway-BoldItalic';
+  src: url('../assets/fonts/Raleway-BoldItalic.ttf');
+}
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('../assets/fonts/Raleway-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'Raleway-ExtraBoldItalic';
+  src: url('../assets/fonts/Raleway-ExtraBoldItalic.ttf');
+}
+@font-face {
+  font-family: 'Raleway-ExtraLight';
+  src: url('../assets/fonts/Raleway-ExtraLight.ttf');
+}
+.bold{
+	font-weight: bold !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5 !important;
+  letter-spacing: 1px !important;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color:#ffbc67;
+}
+.sticky{
+  position: sticky;
+  top:0px;
+  height: 100px;
+  z-index: 999;
+  margin: -85px 0;
+  padding: 0 50px
+}
+ion-header, .header-ios{
+  display: initial;
+  --inner-border-width: 0 0 0px;
+  ion-toolbar{
+    --background:none;
+    a{
+      color:#fff;
+      font-size: 1rem;
+      margin:0 10px;
+      cursor: pointer;
+    }
+    a:hover{
+      color:#ffbc67;
+    }
+    .sc-ion-buttons-md-s .button, .sc-ion-buttons-ios-s .button {
+      --background-hover: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      margin-top: -55px;
+      font-size: 30px;
+    }
+    ion-title{
+      height: 100px;
+    }
+  }
+}
+.header-ios ion-toolbar:last-child {
+  --border-width: 0 0 0 0;
+}
+
+h3, h5, ion-header a, .header-ios a{
+  font-family: "Raleway-ExtraLight";
+}

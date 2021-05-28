@@ -1,44 +1,517 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="fondo" [scrollEvents]="true">
+  <div class="sticky">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons class="icon-menu-movil" slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-grid class="menu-pc">
+        <ion-row>
+          <ion-col size="2">
+            <a href="/home"><img src="/assets/img/logo.png" class="logo" alt="María Torres"/></a>
+          </ion-col>
+          <ion-col size="10">
+            <h2 class="text-right">
+              <a (click)="scrollTo('section1')">SOBRE MI</a>&nbsp;
+              <a (click)="scrollTo('section2')">PORTAFOLIO</a>&nbsp;
+              <a (click)="scrollTo('section3')">CONTACTO</a>&nbsp;
+            </h2>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-title class="text-center">
+        <img src="/assets/img/logo.png" class="logo-movil" alt="María Torres"/>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  </div>
+  <div class="fondo-amanecer">
+    <div class="section no-pad-bot" id="index-banner">
+      <!-- partial:index.partial.html -->
+      <div class="stars">
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+        <div class="container">
+          <div class="star"></div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br>
+    <ion-grid class="text-center bienvenidos">
+      <ion-row>
+        <ion-col>
+          <h1 class="white-text bold">BIENVENIDOS</h1>
+          <h3 class="white-text">Hola soy María, diseñador gráfico y web</h3>
+          <ion-button class="boton-menu" shape="round" (click)="scrollTo2()">
+            ¿EN QUE PUEDO AYUDARTE?
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div id="section1" class="reflejos">
+    <img src="/assets/img/sol.png" class="sol" alt="Sol"/>
+    <img src="/assets/img/tree-big.png" class="tree-big" alt="Arboles Grandes"/>
+    <img src="/assets/img/tree-small.png" class="tree-small" alt="Arboles Pequeños"/>
+    <img src="/assets/img/fondo-reflejo.png"  class="fondo-reflejo-sol"  alt="Reflejo Sol"/>
+    <img src="/assets/img/fondo-reflejo2.png" class="fondo-reflejo2"  alt="Reflejo Arboles"/>
+    <ion-grid class="container-general text-sobremi">
+      <ion-row>
+        <ion-col>
+          <h5 class="white-text text-justify">
+            Soy María Torres, diseñador gráfico, web y también diseñador de aplicaciones trabajando para empresas de todo tipo.
+            <br><br>
+            Mi objetivo es ayudar a profesionales y empresas en todo lo que puedan necesitar para la comunicación visual de sus productos y/o servicios.
+          </h5>
+          <br>
+          <div class="text-center">
+            <img src="/assets/img/habilidades.png" width="80%" alt="Habilidades"/>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
-<ion-content>
-    <ion-card class="welcome-card">
-      <img src="/assets/shapes.svg" alt="" />
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+  <br><br>
+  
+  <div id="icons-yo" class="white" style="position:relative;top:-19vw;">
+    <br><br><br><br>
+    <ion-grid class="text-center">
+      <ion-row>
+        <ion-col size="12" size-md>
+          <img src="/assets/img/herramientas.png" alt="Herramientas"/>
+          <h5 class="justify-text">
+            Todo lo que necesites para la comunicación visual de tu producto o empresa.
+          </h5>
+        </ion-col>
+        <ion-col size="12" size-md>
+          <img src="/assets/img/internet.png" alt="Internet"/>
+          <h5 class="justify-text">
+            Presencia en internet y material para promocionar tus productos y servicios.
+          </h5>
+        </ion-col>
+        <ion-col size="12" size-md>
+          <img src="/assets/img/identidad.png" alt="Identidad"/>
+          <h5 class="justify-text">
+            La identidad para tu empresa y/o producto con la creatividad necesaria para destacar.
+          </h5>
+        </ion-col>
+        <ion-col size="12" size-md>
+          <img src="/assets/img/eventos.png" alt="Eventos"/>
+          <h5 class="justify-text">
+            Material promocional para eventos y jornadas en las que quiereas presentar tus productos. 
+          </h5>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br><br><br><br>
+  </div>
+  
+  <div id="section2" class="container-general" style="position:relative;top:-18vw;">
+    <br><br><br><br>
+    <ion-grid class="text-center">
+      <ion-row>
+        <ion-col>
+          <h2 class="bold white-text">PORTAFOLIO</h2>
+          <h5 class="white-text text-justify">
+            Aquí tienes una pequeña muestra de algunos de mis trabajos, Te invito a entrar en PORTAFOLIO para acceder a una selección más completa donde encontrarás, además de diseños gráfico y diseño web, logotipos y diseño de aplicaciones entre otros tiós de trabajo.  
+          </h5>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br><br><br><br>
+    <div *ngFor="let todo of todos">
+      <div id="openModal{{todo.id}}" class="modalDialog">
+        <div>
+          <a href="/home#close" title="Close" class="close">X</a>
+          <div  style="max-width:769px;margin:0 auto;">
+            <img src="{{todo.img2}}" width="90%" alt="{{todo.task}}"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ion-grid class="text-center" class="botones-portfolio">
+      <ion-row>
+        <ion-col>
+          <ion-button class="boton-menu" shape="round" (click)="branding()">BRANDING</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button class="boton-menu" shape="round" (click)="web()">WEB</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button class="boton-menu" shape="round" (click)="app()">APP</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button class="boton-menu" shape="round" (click)="redes()">REDES</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button class="boton-menu" shape="round" (click)="otros()">OTROS</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br>
+    <ng-container *ngIf="!todos || todos.length == 0">
+      <div style="text-align:center;margin-top: 50%;">
+        <ion-spinner name="circular" color="primary"></ion-spinner>
+      </div>
+    </ng-container>
+
+    <ion-grid class="branding text-center">
+      <ion-row>
+        <ion-col size="4" *ngFor="let todo of todosBranding">
+          <a href="/home#openModal{{todo.id}}">
+            <img src="{{todo.img}}" width="90%" alt="{{todo.task}}"/>
+          </a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="web text-center">
+      <ion-row>
+        <ion-col size="4" *ngFor="let todo of todosWeb">
+          <a href="/home#openModal{{todo.id}}">
+            <img src="{{todo.img}}" width="90%" alt="{{todo.task}}"/>
+          </a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="app text-center">
+      <ion-row>
+        <ion-col size="4" *ngFor="let todo of todosApp">
+          <a href="/home#openModal{{todo.id}}">
+            <img src="{{todo.img}}" width="90%" alt="{{todo.task}}"/>
+          </a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="redes text-center">
+      <ion-row>
+        <ion-col size="4" *ngFor="let todo of todosRedes">
+          <a href="/home#openModal{{todo.id}}">
+            <img src="{{todo.img}}" width="90%" alt="{{todo.task}}"/>
+          </a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="otros text-center">
+      <ion-row>
+        <ion-col size="4" *ngFor="let todo of todosOtros">
+          <a href="/home#openModal{{todo.id}}">
+            <img src="{{todo.img}}" width="90%" alt="{{todo.task}}"/>
+          </a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  </div>
+
+
+  <div id="section3" class="container-general">
+    <ion-grid class="text-center">
+      <ion-row>
+        <ion-col>
+          <h5 class="white-text text-justify">
+            No dudes de contactar conmigo, cada proyecto es un desafio para mi, no exiten clientes grandes o pequeños, todos son importantes y todos reciben un servicio basado en la experiencia y la creatividad.
+          </h5>
+          <br>
+          <h2 class="bold white-text">
+            <a href="https://www.facebook.com/maria.torresperdomo" target="_blank" class="white-text">FACEBOOK</a> |
+            <a href="https://www.instagram.com/torres.mariia/" target="_blank" class="white-text">INSTAGRAM</a> |
+            <a href="https://www.behance.net/mariatorres2" target="_blank" class="white-text">BEHANCE</a> 
+          </h2>
+          <h5 class="white-text text-center">
+            <a href="mailto:mariatorres19959@gmail.com" class="white-text">mariatorres19959@gmail.com</a>
+          </h5>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="footer">
+        <ion-col>
+          <h5 class="white-text text-center">
+            Privacy | Terms of Use
+            <br>
+            Developed by <a href="https://tagastudios.com/" target="_blank" class="white-text">TAGA STUDIOS</a>
+          </h5>
+        </ion-col>
+        <ion-col>
+          <ion-buttons class="boton-menu2 ocultar-movil" shape="round" (click)="contactarws()">
+            <img src="/assets/img/whatsapp.png" width="50px" alt="Whatsapp"/>  
+            Consulta por WhatsApp
+          </ion-buttons>
+          <img src="/assets/img/whatsapp.png" class="ocultar-pc" width="50px" alt="Whatsapp" button (click)="contactarws()"/>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  </div>
+  <img src="/assets/img/fondo-footer.png" class="fondo-footer" alt="Eventos"/>
+
 </ion-content>
